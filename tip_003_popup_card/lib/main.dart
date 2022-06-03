@@ -41,24 +41,24 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  AppColors.backgroundFadedColor,
-                  AppColors.backgroundColor,
-                ],
-                stops: [0.0, 1],
-              ),
-            ),
-          ),
-          SafeArea(
-            child: _TodoListContent(
-              todos: fakeData,
-            ),
-          ),
+          // Container(
+          //   decoration: const BoxDecoration(
+          //     gradient: LinearGradient(
+          //       begin: Alignment.topCenter,
+          //       end: Alignment.bottomCenter,
+          //       colors: [
+          //         AppColors.backgroundFadedColor,
+          //         AppColors.backgroundColor,
+          //       ],
+          //       stops: [0.0, 1],
+          //     ),
+          //   ),
+          // ),
+          // SafeArea(
+          //   child: _TodoListContent(
+          //     todos: fakeData,
+          //   ),
+          // ),
           const Align(
             alignment: Alignment.bottomRight,
             child: AddTodoButton(),
